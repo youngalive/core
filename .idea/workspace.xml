@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c0675ccd-82a3-45cc-b7c5-a315481f9868" name="Changes" comment="스프링 핵심 원리 이해2 - 객체 지향 원리 적용" />
+    <list default="true" id="c0675ccd-82a3-45cc-b7c5-a315481f9868" name="Changes" comment="스프링 핵심 원리 이해2 - 객체 지향 원리 적용">
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -228,6 +230,7 @@
       <workItem from="1662452621413" duration="8739000" />
       <workItem from="1662476479418" duration="5678000" />
       <workItem from="1663163411554" duration="9015000" />
+      <workItem from="1666531956502" duration="193000" />
     </task>
     <task id="LOCAL-00001" summary="section2">
       <created>1662480117603</created>
@@ -243,7 +246,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666020457027</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="스프링 핵심 원리 이해2 - 객체 지향 원리 적용">
+      <created>1666532122919</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1666532122919</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
