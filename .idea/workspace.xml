@@ -5,7 +5,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c0675ccd-82a3-45cc-b7c5-a315481f9868" name="Changes" comment="스프링 핵심 원리 이해2 - 객체 지향 원리 적용">
+      <change afterPath="$PROJECT_DIR$/src/test/java/hello/core/beanfind/ApplicationContextInfoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/core.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/core.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/core.main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/core.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/core.test.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/hello/core/AppConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/hello/core/MemberApp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/hello/core/OrderApp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/hello/core/discount/DiscountPolicy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/hello/core/discount/FixDiscountPolicy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/hello/core/discount/RateDiscountPolicy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/hello/core/member/Grade.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/hello/core/member/Member.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/hello/core/member/MemberRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/hello/core/member/MemberService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/hello/core/member/MemberServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/hello/core/member/MemoryMemberRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/hello/core/order/Order.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/hello/core/order/OrderService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/hello/core/order/OrderServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hello/core/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hello/core/AppConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +78,7 @@
         <option value="Interface" />
         <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="AnnotationType" />
       </list>
     </option>
   </component>
@@ -78,12 +103,12 @@
               <option name="branches">
                 <list>
                   <RecentBranch>
-                    <option name="branchName" value="main" />
-                    <option name="lastUsedInstant" value="1666020528" />
+                    <option name="branchName" value="002" />
+                    <option name="lastUsedInstant" value="1666562555" />
                   </RecentBranch>
                   <RecentBranch>
-                    <option name="branchName" value="02" />
-                    <option name="lastUsedInstant" value="1662720938" />
+                    <option name="branchName" value="main" />
+                    <option name="lastUsedInstant" value="1666020528" />
                   </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="master" />
@@ -111,6 +136,7 @@
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
+    <option name="showVisibilityIcons" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="RequestMappingsPanelOrder0" value="0" />
@@ -127,11 +153,14 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/build.gradle" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.19885057" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="hello.core" />
+    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
@@ -139,7 +168,7 @@
       <recent name="hello.core.discount" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.CoreApplication">
+  <component name="RunManager" selected="JUnit.ApplicationContextInfoTest.">
     <configuration name="MemberApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="hello.core.MemberApp" />
       <module name="core.main" />
@@ -166,33 +195,61 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="All in core.test (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="core.test" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="All in core.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="core.test" />
+      <extension name="software.aws.toolkits.jetbrains.core.execution.JavaAwsConnectionExtension">
+        <option name="credential" />
+        <option name="region" />
+        <option name="useCurrentConnection" value="false" />
+      </extension>
       <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RateDiscountPolicyTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ApplicationContextInfoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="core.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="hello.core.discount.*" />
+          <option name="PATTERN" value="hello.core.beanfind.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="hello.core.discount" />
-      <option name="MAIN_CLASS_NAME" value="hello.core.discount.RateDiscountPolicyTest" />
+      <extension name="software.aws.toolkits.jetbrains.core.execution.JavaAwsConnectionExtension">
+        <option name="credential" />
+        <option name="region" />
+        <option name="useCurrentConnection" value="false" />
+      </extension>
+      <option name="PACKAGE_NAME" value="hello.core.beanfind" />
+      <option name="MAIN_CLASS_NAME" value="hello.core.beanfind.ApplicationContextInfoTest" />
+      <option name="METHOD_NAME" value="findAllBean" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ApplicationContextInfoTest." type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="core.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="hello.core.beanfind.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <extension name="software.aws.toolkits.jetbrains.core.execution.JavaAwsConnectionExtension">
+        <option name="credential" />
+        <option name="region" />
+        <option name="useCurrentConnection" value="false" />
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="11" />
+      <option name="PACKAGE_NAME" value="hello.core.beanfind" />
+      <option name="MAIN_CLASS_NAME" value="hello.core.beanfind.ApplicationContextInfoTest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -204,13 +261,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.MemberApp" />
+      <item itemvalue="Application.OrderApp" />
+      <item itemvalue="JUnit.All in core.test" />
+      <item itemvalue="JUnit.ApplicationContextInfoTest" />
+      <item itemvalue="JUnit.ApplicationContextInfoTest." />
+      <item itemvalue="Spring Boot.CoreApplication" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.OrderApp" />
-        <item itemvalue="Application.MemberApp" />
-        <item itemvalue="JUnit.All in core.test (1)" />
-        <item itemvalue="JUnit.All in core.test" />
-        <item itemvalue="JUnit.RateDiscountPolicyTest" />
+        <item itemvalue="JUnit.ApplicationContextInfoTest." />
       </list>
     </recent_temporary>
   </component>
@@ -230,7 +291,14 @@
       <workItem from="1662452621413" duration="8739000" />
       <workItem from="1662476479418" duration="5678000" />
       <workItem from="1663163411554" duration="9015000" />
-      <workItem from="1666531956502" duration="193000" />
+      <workItem from="1666531956502" duration="3321000" />
+      <workItem from="1666560601484" duration="174000" />
+      <workItem from="1666560797701" duration="25000" />
+      <workItem from="1666560843268" duration="35000" />
+      <workItem from="1666560898812" duration="73000" />
+      <workItem from="1666561120205" duration="797000" />
+      <workItem from="1666561925653" duration="71000" />
+      <workItem from="1666562016668" duration="907000" />
     </task>
     <task id="LOCAL-00001" summary="section2">
       <created>1662480117603</created>
@@ -253,7 +321,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666532122919</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="스프링 핵심 원리 이해2 - 객체 지향 원리 적용">
+      <created>1666532155334</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1666532155334</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
