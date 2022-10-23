@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c0675ccd-82a3-45cc-b7c5-a315481f9868" name="Changes" comment="스프링 핵심 원리 이해2 - 객체 지향 원리 적용">
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-    </list>
+    <list default="true" id="c0675ccd-82a3-45cc-b7c5-a315481f9868" name="Changes" comment="스프링 핵심 원리 이해2 - 객체 지향 원리 적용" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -79,11 +77,7 @@
                 <list>
                   <RecentBranch>
                     <option name="branchName" value="main" />
-                    <option name="lastUsedInstant" value="1666020528" />
-                  </RecentBranch>
-                  <RecentBranch>
-                    <option name="branchName" value="02" />
-                    <option name="lastUsedInstant" value="1662720938" />
+                    <option name="lastUsedInstant" value="1666563223" />
                   </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="master" />
@@ -204,6 +198,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.MemberApp" />
+      <item itemvalue="Application.OrderApp" />
+      <item itemvalue="JUnit.All in core.test (1)" />
+      <item itemvalue="JUnit.RateDiscountPolicyTest" />
+      <item itemvalue="JUnit.All in core.test" />
+      <item itemvalue="Spring Boot.CoreApplication" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.OrderApp" />
@@ -270,7 +272,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="02" />
+                        <option value="main" />
                       </list>
                     </value>
                   </entry>
@@ -285,7 +287,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="section2" />
     <MESSAGE value="스프링 핵심 원리 이해2 - 객체 지향 원리 적용" />
-    <option name="LAST_COMMIT_MESSAGE" value="스프링 핵심 원리 이해2 - 객체 지향 원리 적용" />
+    <MESSAGE value="ApplicationContextInfoTest" />
+    <option name="LAST_COMMIT_MESSAGE" value="ApplicationContextInfoTest" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
