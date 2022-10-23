@@ -1,0 +1,54 @@
+Index: src/main/java/hello/core/order/Order.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package hello.core.order;\n\npublic class Order {\n\n    private Long memberId;\n    private String itemName;\n    private int itemPrice;\n    private int discountPrice;\n\n\n    public Order(Long memberId, String itemName, int itemPrice, int discountPrice) {\n        this.memberId = memberId;\n        this.itemName = itemName;\n        this.itemPrice = itemPrice;\n        this.discountPrice = discountPrice;\n    }\n\n    public int calculatePrice(){\n        return itemPrice - discountPrice;\n    }\n\n    public Long getMemberId() {\n        return memberId;\n    }\n\n    public void setMemberId(Long memberId) {\n        this.memberId = memberId;\n    }\n\n    public String getItemName() {\n        return itemName;\n    }\n\n    public void setItemName(String itemName) {\n        this.itemName = itemName;\n    }\n\n    public int getItemPrice() {\n        return itemPrice;\n    }\n\n    public void setItemPrice(int itemPrice) {\n        this.itemPrice = itemPrice;\n    }\n\n    public int getDiscountPrice() {\n        return discountPrice;\n    }\n\n    public void setDiscountPrice(int discountPrice) {\n        this.discountPrice = discountPrice;\n    }\n\n    @Override\n    public String toString() {\n        return \"Order{\" +\n                \"memberId=\" + memberId +\n                \", itemName='\" + itemName + '\\'' +\n                \", itemPrice=\" + itemPrice +\n                \", discountPrice=\" + discountPrice +\n                '}';\n    }\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/hello/core/order/Order.java b/src/main/java/hello/core/order/Order.java
+--- a/src/main/java/hello/core/order/Order.java	(revision 875b8508d67e9acc6ee0ff2f793e4d3c02b983c1)
++++ b/src/main/java/hello/core/order/Order.java	(date 1666531714369)
+@@ -1,6 +1,6 @@
+ package hello.core.order;
+ 
+-public class Order {
++public class Order<Long> {
+ 
+     private Long memberId;
+     private String itemName;
+Index: src/main/java/hello/core/order/OrderServiceImpl.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package hello.core.order;\n\nimport hello.core.discount.DiscountPolicy;\nimport hello.core.discount.FixDiscountPolicy;\nimport hello.core.member.Member;\nimport hello.core.member.MemberRepository;\nimport hello.core.member.MemoryMemberRepository;\n\npublic class OrderServiceImpl implements OrderService{\n\n    private final MemberRepository memberRepository = new MemoryMemberRepository();\n    private final DiscountPolicy discountPolicy = new FixDiscountPolicy();\n\n    @Override\n    public Order createOrder(Long memberId, String itemName, int itemPrice) { //1. 주문생성 요청이 들어오면\n        Member member = memberRepository.findById(memberId);  //2. 회원정보를 조회를 해서\n        int discountPrice = discountPolicy.discount(member, itemPrice); //3. 할인정책에 회원을 넘김\n        // OrderServiceImpl은 discountPolicy에 대해서 모름 => 단일 책임의 원칙이 잘 지켜짐\n\n        return new Order(memberId, itemName, itemPrice, discountPrice);\n    }\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/hello/core/order/OrderServiceImpl.java b/src/main/java/hello/core/order/OrderServiceImpl.java
+--- a/src/main/java/hello/core/order/OrderServiceImpl.java	(revision 875b8508d67e9acc6ee0ff2f793e4d3c02b983c1)
++++ b/src/main/java/hello/core/order/OrderServiceImpl.java	(date 1666531714378)
+@@ -1,15 +1,21 @@
+ package hello.core.order;
+ 
+ import hello.core.discount.DiscountPolicy;
+-import hello.core.discount.FixDiscountPolicy;
+ import hello.core.member.Member;
+ import hello.core.member.MemberRepository;
+-import hello.core.member.MemoryMemberRepository;
+ 
+ public class OrderServiceImpl implements OrderService{
+ 
+-    private final MemberRepository memberRepository = new MemoryMemberRepository();
+-    private final DiscountPolicy discountPolicy = new FixDiscountPolicy();
++    /*private final MemberRepository memberRepository = new MemoryMemberRepository(); //final은 무조건 값이 할당되어야함
++    private final DiscountPolicy discountPolicy = new FixDiscountPolicy();*/
++
++    private final MemberRepository memberRepository; //interface에만 의존
++    private final DiscountPolicy discountPolicy;
++
++    public OrderServiceImpl(MemberRepository memberRepository, DiscountPolicy discountPolicy) {
++        this.memberRepository = memberRepository;
++        this.discountPolicy = discountPolicy;
++    }
+ 
+     @Override
+     public Order createOrder(Long memberId, String itemName, int itemPrice) { //1. 주문생성 요청이 들어오면
